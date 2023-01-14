@@ -1,0 +1,929 @@
+id,province_id,name_th,name_en
+1,1,พระนคร,Phra Nakhon
+2,1,ดุสิต,Dusit
+3,1,หนองจอก,Nong Chok
+4,1,บางรัก,Bang Rak
+5,1,บางเขน,Bang Khen
+6,1,บางกะปิ,Bang Kapi
+7,1,ปทุมวัน,Pathum Wan
+8,1,ป้อมปราบศัตรูพ่าย,Pom Prap Sattruphai
+9,1,พระโขนง,Phra Khanong
+10,1,มีนบุรี,Min Buri
+11,1,ลาดกระบัง,Lat Krabang
+12,1,ยานนาวา,Yannawa
+13,1,สัมพันธวงศ์,Samphanthawong
+14,1,พญาไท,Phaya Thai
+15,1,ธนบุรี,Thon Buri
+16,1,บางกอกใหญ่,Bangkok Yai
+17,1,ห้วยขวาง,Huai Khwang
+18,1,คลองสาน,Khlong San
+19,1,ตลิ่งชัน,Taling Chan
+20,1,บางกอกน้อย,Bangkok Noi
+21,1,บางขุนเทียน,Bang Khun Thian
+22,1,ภาษีเจริญ,Phasi Charoen
+23,1,หนองแขม,Nong Khaem
+24,1,ราษฎร์บูรณะ,Rat Burana
+25,1,บางพลัด,Bang Phlat
+26,1,ดินแดง,Din Daeng
+27,1,บึงกุ่ม,Bung Kum
+28,1,สาทร,Sa Thon
+29,1,บางซื่อ,Bang Su
+30,1,จตุจักร,Chatuchak
+31,1,บางคอแหลม,Bang Kho Laem
+32,1,ประเวศ,Prawet
+33,1,คลองเตย,Khlong Toei
+34,1,สวนหลวง,Suan Luang
+35,1,จอมทอง,Chom Thong
+36,1,ดอนเมือง,Don Mueang
+37,1,ราชเทวี,Rat Thewi
+38,1,ลาดพร้าว,Lat Phrao
+39,1,วัฒนา,Watthana
+40,1,บางแค,Bang Khae
+41,1,หลักสี่,Lak Si
+42,1,สายไหม,Sai Mai
+43,1,คันนายาว,Khanna Yao
+44,1,สะพานสูง,Saphan Sung
+45,1,วังทองหลาง,Wang Thong Lang
+46,1,คลองสามวา,Khlong Sam Wa
+47,1,บางนา,Bang Na
+48,1,ทวีวัฒนา,Thawi Watthana
+49,1,ทุ่งครุ,Thung Khu
+50,1,บางบอน,Bang Bon
+51,2,เมืองสมุทรปราการ,Mueang Samut Prakan
+52,2,บางบ่อ,Bang Bo
+53,2,บางพลี,Bang Phli
+54,2,พระประแดง,Phra Pradaeng
+55,2,พระสมุทรเจดีย์,Phra Samut Chedi
+56,2,บางเสาธง,Bang Sao Thong
+57,3,เมืองนนทบุรี,Mueang Nonthaburi
+58,3,บางกรวย,Bang Kruai
+59,3,บางใหญ่,Bang Yai
+60,3,บางบัวทอง,Bang Bua Thong
+61,3,ไทรน้อย,Sai Noi
+62,3,ปากเกร็ด,Pak Kret
+63,4,เมืองปทุมธานี,Mueang Pathum Thani
+64,4,คลองหลวง,khlong Luang
+65,4,ธัญบุรี,Thanyaburi
+66,4,หนองเสือ,Nong Suea
+67,4,ลาดหลุมแก้ว,Lat Lum Kaeo
+68,4,ลำลูกกา,Lam Luk Ka
+69,4,สามโคก,Sam Khok
+70,5,พระนครศรีอยุธยา,Phra Nakhon Si Ayutthaya
+71,5,ท่าเรือ,Tha Ruea
+72,5,นครหลวง,Nakhon Luang
+73,5,บางไทร,Bang Sai
+74,5,บางบาล,Bang Ban
+75,5,บางปะอิน,Bang Pa-in
+76,5,บางปะหัน,Bang Pahan
+77,5,ผักไห่,Phak Hai
+78,5,ภาชี,Phachi
+79,5,ลาดบัวหลวง,Lat Bua Luang
+80,5,วังน้อย,Wang Noi
+81,5,เสนา,Sena
+82,5,บางซ้าย,Bang Sai
+83,5,อุทัย,Uthai
+84,5,มหาราช,Maha Rat
+85,5,บ้านแพรก,Ban Phraek
+86,6,เมืองอ่างทอง,Mueang Ang Thong
+87,6,ไชโย,Chaiyo
+88,6,ป่าโมก,Pa Mok
+89,6,โพธิ์ทอง,Pho Thong
+90,6,แสวงหา,Sawaeng Ha
+91,6,วิเศษชัยชาญ,Wiset Chai Chan
+92,6,สามโก้,Samko
+93,7,เมืองลพบุรี,Mueang Lop Buri
+94,7,พัฒนานิคม,Phatthana Nikhom
+95,7,โคกสำโรง,Khok Samrong
+96,7,ชัยบาดาล,Chai Badan
+97,7,ท่าวุ้ง,Tha Wung
+98,7,บ้านหมี่,Ban Mi
+99,7,ท่าหลวง,Tha Luang
+100,7,สระโบสถ์,Sa Bot
+101,7,โคกเจริญ,Khok Charoen
+102,7,ลำสนธิ,Lam Sonthi
+103,7,หนองม่วง,Nong Muang
+104,8,เมืองสิงห์บุรี,Mueang Sing Buri
+105,8,บางระจัน,Bang Rachan
+106,8,ค่ายบางระจัน,Khai Bang Rachan
+107,8,พรหมบุรี,Phrom Buri
+108,8,ท่าช้าง,Tha Chang
+109,8,อินทร์บุรี,In Buri
+110,9,เมืองชัยนาท,Mueang Chai Nat
+111,9,มโนรมย์,Manorom
+112,9,วัดสิงห์,Wat Sing
+113,9,สรรพยา,Sapphaya
+114,9,สรรคบุรี,Sankhaburi
+115,9,หันคา,Hankha
+116,9,หนองมะโมง,Nong Mamong
+117,9,เนินขาม,Noen Kham
+118,10,เมืองสระบุรี,Mueang Saraburi
+119,10,แก่งคอย,Kaeng Khoi
+120,10,หนองแค,Nong Khae
+121,10,วิหารแดง,Wihan Daeng
+122,10,หนองแซง,Nong Saeng
+123,10,บ้านหมอ,Ban Mo
+124,10,ดอนพุด,Don Phut
+125,10,หนองโดน,Nong Don
+126,10,พระพุทธบาท,Phra Phutthabat
+127,10,เสาไห้,Sao Hai
+128,10,มวกเหล็ก,Muak Lek
+129,10,วังม่วง,Wang Muang
+130,10,เฉลิมพระเกียรติ,Chaloem Phra Kiet
+131,11,เมืองชลบุรี,Mueang Chon Buri
+132,11,บ้านบึง,Ban Bueng
+133,11,หนองใหญ่,Nong Yai
+134,11,บางละมุง,Bang Lamung
+135,11,พานทอง,Phan Thong
+136,11,พนัสนิคม,Phanat Nikhom
+137,11,ศรีราชา,Si Racha
+138,11,เกาะสีชัง,Ko Sichang
+139,11,สัตหีบ,Sattahip
+140,11,บ่อทอง,Bo Thong
+141,11,เกาะจันทร์,Ko Chan
+142,12,เมืองระยอง,Mueang Rayong
+143,12,บ้านฉาง,Ban Chang
+144,12,แกลง,Klaeng
+145,12,วังจันทร์,Wang Chan
+146,12,บ้านค่าย,Ban Khai
+147,12,ปลวกแดง,Pluak Daeng
+148,12,เขาชะเมา,Khao Chamao
+149,12,นิคมพัฒนา,Nikhom Phatthana
+150,13,เมืองจันทบุรี,Mueang Chanthaburi
+151,13,ขลุง,Khlung
+152,13,ท่าใหม่,Tha Mai
+153,13,โป่งน้ำร้อน,Pong Nam Ron
+154,13,มะขาม,Makham
+155,13,แหลมสิงห์,Laem Sing
+156,13,สอยดาว,Soi Dao
+157,13,แก่งหางแมว,Kaeng Hang Maeo
+158,13,นายายอาม,Na Yai Am
+159,13,เขาคิชฌกูฏ,Khao Khitchakut
+160,14,เมืองตราด,Mueang Trat
+161,14,คลองใหญ่,Khlong Yai
+162,14,เขาสมิง,Khao Saming
+163,14,บ่อไร่,Bo Rai
+164,14,แหลมงอบ,Laem Ngop
+165,14,เกาะกูด,Ko Kut
+166,14,เกาะช้าง,Ko Chang
+167,15,เมืองฉะเชิงเทรา,Mueang Chachoengsao
+168,15,บางคล้า,Bang Khla
+169,15,บางน้ำเปรี้ยว,Bang Nam Priao
+170,15,บางปะกง,Bang Pakong
+171,15,บ้านโพธิ์,Ban Pho
+172,15,พนมสารคาม,Phanom Sarakham
+173,15,ราชสาส์น,Ratchasan
+174,15,สนามชัยเขต,Sanam Chai Khet
+175,15,แปลงยาว,Pleang Yao
+176,15,ท่าตะเกียบ,Tha Takiap
+177,15,คลองเขื่อน,Khlong Khuean
+178,16,เมืองปราจีนบุรี,Mueang Prachin Buri
+179,16,กบินทร์บุรี,Kabin Buri
+180,16,นาดี,Na Di
+181,16,บ้านสร้าง,Ban Sang
+182,16,ประจันตคาม,Prachantakham
+183,16,ศรีมหาโพธิ,Si Maha Phot
+184,16,ศรีมโหสถ,Si Mahosot
+185,17,เมืองนครนายก,Mueang Nakhon Nayok
+186,17,ปากพลี,Pak Phli
+187,17,บ้านนา,Ban Na
+188,17,องครักษ์,Ongkharak
+189,18,เมืองสระแก้ว,Mueang Sa Kaeo
+190,18,คลองหาด,Khlong Hat
+191,18,ตาพระยา,Ta Phraya
+192,18,วังน้ำเย็น,Wang Nam Yen
+193,18,วัฒนานคร,Watthana Nakhon
+194,18,อรัญประเทศ,Aranyaprathet
+195,18,เขาฉกรรจ์,Khao Chakan
+196,18,โคกสูง,Khok Sung
+197,18,วังสมบูรณ์,Wang Sombun
+198,19,เมืองนครราชสีมา,Mueang Nakhon Ratchasima
+199,19,ครบุรี,Khon Buri
+200,19,เสิงสาง,Soeng Sang
+201,19,คง,Khong
+202,19,บ้านเหลื่อม,Ban Lueam
+203,19,จักราช,Chakkarat
+204,19,โชคชัย,Chok Chai
+205,19,ด่านขุนทด,Dan Khun Thot
+206,19,โนนไทย,Non Thai
+207,19,โนนสูง,Non Sung
+208,19,ขามสะแกแสง,Kham Sakaesaeng
+209,19,บัวใหญ่,Bua Yai
+210,19,ประทาย,Prathai
+211,19,ปักธงชัย,Pak Thong Chai
+212,19,พิมาย,Phimai
+213,19,ห้วยแถลง,Huai Thalaeng
+214,19,ชุมพวง,Chum Phuang
+215,19,สูงเนิน,Sung Noen
+216,19,ขามทะเลสอ,Kham Thale So
+217,19,สีคิ้ว,Si Khio
+218,19,ปากช่อง,Pak Chong
+219,19,หนองบุญมาก,Nong Bunmak
+220,19,แก้งสนามนาง,Kaeng Sanam Nang
+221,19,โนนแดง,Non Daeng
+222,19,วังน้ำเขียว,Wang Nam Khiao
+223,19,เทพารักษ์,Thepharak
+224,19,เมืองยาง,Mueang Yang
+225,19,พระทองคำ,Phra Thong Kham
+226,19,ลำทะเมนชัย,Lamtaman Chai
+227,19,บัวลาย,Bua Lai
+228,19,สีดา,Sida
+229,19,เฉลิมพระเกียรติ,Chaloem Phra Kiet
+230,20,เมืองบุรีรัมย์,Mueang Buri Ram
+231,20,คูเมือง,Khu Mueang
+232,20,กระสัง,Krasang
+233,20,นางรอง,Nang Rong
+234,20,หนองกี่,Nong Ki
+235,20,ละหานทราย,Lahan Sai
+236,20,ประโคนชัย,Prakhon Chai
+237,20,บ้านกรวด,Ban Kruat
+238,20,พุทไธสง,Phutthaisong
+239,20,ลำปลายมาศ,Lam Plai Mat
+240,20,สตึก,Satuek
+241,20,ปะคำ,Pakham
+242,20,นาโพธิ์,Na Pho
+243,20,หนองหงส์,Nong Hong
+244,20,พลับพลาชัย,Phlapphla Chai
+245,20,ห้วยราช,Huai Rat
+246,20,โนนสุวรรณ,Non Din Daeng
+247,20,ชำนิ,Chamni
+248,20,บ้านใหม่ไชยพจน์,Ban Mai Chaiyaphot
+249,20,โนนดินแดง,Non Din Daeng
+250,20,บ้านด่าน,Ban Dan
+251,20,แคนดง,Khaen Dong
+252,20,เฉลิมพระเกียรติ,Chaloem Phra Kiet
+253,21,เมืองสุรินทร์,Mueang Surin
+254,21,ชุมพลบุรี,Chumphon Buri
+255,21,ท่าตูม,Tha Tum
+256,21,จอมพระ,Chom Phra
+257,21,ปราสาท,Prasat
+258,21,กาบเชิง,Kap Choeng
+259,21,รัตนบุรี,Rattanaburi
+260,21,สนม,Sanom
+261,21,ศีขรภูมิ,Sikhoraphum
+262,21,สังขะ,Sangkha
+263,21,ลำดวน,Lamduan
+264,21,สำโรงทาบ,Samrong Thap
+265,21,บัวเชด,Buachet
+266,21,พนมดงรัก,Phanom Dong Rak
+267,21,ศรีณรงค์,Si Narong
+268,21,เขวาสินรินทร์,Khwao Sinarin
+269,21,โนนนารายณ์,Non Narai
+270,22,เมืองศรีสะเกษ,Mueang Si Sa Ket
+271,22,ยางชุมน้อย,Yang Chum Noi
+272,22,กันทรารมย์,Kanthararom
+273,22,กันทรลักษ์,Kantharalak
+274,22,ขุขันธ์,Khukhan
+275,22,ไพรบึง,Phrai Bueng
+276,22,ปรางค์กู่,Prang Ku
+277,22,ขุนหาญ,Khun Han
+278,22,ราษีไศล,Rasi Salai
+279,22,อุทุมพรพิสัย,Uthumphon Phisai
+280,22,บึงบูรพ์,Bueng Bun
+281,22,ห้วยทับทัน,Huai Thap Than
+282,22,โนนคูณ,Non Khun
+283,22,ศรีรัตนะ,Si Rattana
+284,22,น้ำเกลี้ยง,Nam Kliang
+285,22,วังหิน,Wang Hin
+286,22,ภูสิงห์,Phu Sing
+287,22,เมืองจันทร์,Mueang Chan
+288,22,เบญจลักษ์,Benchalak
+289,22,พยุห์,Phayu
+290,22,โพธิ์ศรีสุวรรณ,Pho Si Suwan
+291,22,ศิลาลาด,Sila Lat
+292,23,เมืองอุบลราชธานี,Mueang Ubon Ratchathani
+293,23,ศรีเมืองใหม่,Si Mueang Mai
+294,23,โขงเจียม,Khong Chiam
+295,23,เขื่องใน,Khueang Nai
+296,23,เขมราฐ,Khemarat
+297,23,เดชอุดม,Det Udom
+298,23,นาจะหลวย,Na Chaluai
+299,23,น้ำยืน,Nam Yuen
+300,23,บุณฑริก,Boontharik
+301,23,ตระการพืชผล,Trakan Phuet Phon
+302,23,กุดข้าวปุ้น,Kut Khaopun
+303,23,ม่วงสามสิบ,Muang Sam Sip
+304,23,วารินชำราบ,Warin Chamrap
+305,23,พิบูลมังสาหาร,Phibun Mangsahan
+306,23,ตาลสุม,Tan Sum
+307,23,โพธิ์ไทร,Pho Sai
+308,23,สำโรง,Samrong
+309,23,ดอนมดแดง,Don Mot Daeng
+310,23,สิรินธร,Sirindhorn
+311,23,ทุ่งศรีอุดม,Thung Si Udom
+312,23,นาเยีย,Na Yia
+313,23,นาตาล,Na Tan
+314,23,เหล่าเสือโก้ก,Lao Suea Kok
+315,23,สว่างวีระวงศ์,Sawang Wirawong
+316,23,น้ำขุ่น,Nam Khun
+317,24,เมืองยโสธร,Mueang Yasothon
+318,24,ทรายมูล,Sai Mun
+319,24,กุดชุม,Kut Chum
+320,24,คำเขื่อนแก้ว,Kham Khuean Kaeo
+321,24,ป่าติ้ว,Pa Tio
+322,24,มหาชนะชัย,Maha Chana Chai
+323,24,ค้อวัง,Kho Wang
+324,24,เลิงนกทา,Loeng Nok Tha
+325,24,ไทยเจริญ,Thai Charoen
+326,25,เมืองชัยภูมิ,Mueang Chaiyaphum
+327,25,บ้านเขว้า,Ban Khwao
+328,25,คอนสวรรค์,Khon Sawan
+329,25,เกษตรสมบูรณ์,Kaset Sombun
+330,25,หนองบัวแดง,Nong Bua Daeng
+331,25,จัตุรัส,Chatturat
+332,25,บำเหน็จณรงค์,Bamnet Narong
+333,25,หนองบัวระเหว,Nong Bua Rawe
+334,25,เทพสถิต,Thep Sathit
+335,25,ภูเขียว,Phu Khiao
+336,25,บ้านแท่น,Ban Thaen
+337,25,แก้งคร้อ,Kaeng Khro
+338,25,คอนสาร,Khon San
+339,25,ภักดีชุมพล,Phakdi Chumphon
+340,25,เนินสง่า,Noen Sa-nga
+341,25,ซับใหญ่,Sap Yai
+342,26,เมืองอำนาจเจริญ,Mueang Amnat Charoen
+343,26,ชานุมาน,Chanuman
+344,26,ปทุมราชวงศา,Pathum Ratchawongsa
+345,26,พนา,Phana
+346,26,เสนางคนิคม,Senangkhanikhom
+347,26,หัวตะพาน,Hua Taphan
+348,26,ลืออำนาจ,Lue Amnat
+349,27,บึงกาฬ,Bueng Kan
+350,27,พรเจริญ,Phon Charoen
+351,27,โซ่พิสัย,So Phisai
+352,27,เซกา,Seka
+353,27,ปากคาด,Pak Khat
+354,27,บึงโขงหลง,Bueng Khong Long
+355,27,ศรีวิไล,Si Wilai
+356,27,บุ่งคล้า,Bung Khla
+357,28,เมืองหนองบัวลำภู,Mueang Nong Bua Lam Phu
+358,28,นากลาง,Na Klang
+359,28,โนนสัง,Non Sang
+360,28,ศรีบุญเรือง,Si Bun Rueang
+361,28,สุวรรณคูหา,Suwannakhuha
+362,28,นาวัง,Na Wang
+363,29,เมืองขอนแก่น,Mueang Khon Kaen
+364,29,บ้านฝาง,Ban Fang
+365,29,พระยืน,Phra Yuen
+366,29,หนองเรือ,Nong Ruea
+367,29,ชุมแพ,Chum Phae
+368,29,สีชมพู,Si Chomphu
+369,29,น้ำพอง,Nam Phong
+370,29,อุบลรัตน์,Ubolratana
+371,29,กระนวน,Kranuan
+372,29,บ้านไผ่,Ban Phai
+373,29,เปือยน้อย,Pueai Noi
+374,29,พล,Phon
+375,29,แวงใหญ่,Waeng Yai
+376,29,แวงน้อย,Waeng Noi
+377,29,หนองสองห้อง,Nong Song Hong
+378,29,ภูเวียง,Phu Wiang
+379,29,มัญจาคีรี,Mancha Khiri
+380,29,ชนบท,Chonnabot
+381,29,เขาสวนกวาง,Khao Suan Kwang
+382,29,ภูผาม่าน,Phu Phaman
+383,29,ซำสูง,Sam Sung
+384,29,โคกโพธิ์ไชย,Khok Pho Chai
+385,29,หนองนาคำ,Nong Na Kham
+386,29,บ้านแฮด,Ban Haet
+387,29,โนนศิลา,Non Sila
+388,29,เวียงเก่า,Wiang Kao
+389,30,เมืองอุดรธานี,Mueang Udon Thani
+390,30,กุดจับ,Kut Chap
+391,30,หนองวัวซอ,Nong Wua So
+392,30,กุมภวาปี,Kumphawapi
+393,30,โนนสะอาด,Non Sa-at
+394,30,หนองหาน,Nong Saeng
+395,30,ทุ่งฝน,Thung Fon
+396,30,ไชยวาน,Chai Wan
+397,30,ศรีธาตุ,Si That
+398,30,วังสามหมอ,Wang Sam Mo
+399,30,บ้านดุง,Ban Dung
+400,30,บ้านผือ,Ban Phue
+401,30,น้ำโสม,Nam Som
+402,30,เพ็ญ,Phen
+403,30,สร้างคอม,Sang Khom
+404,30,หนองแสง,Nong Saeng
+405,30,นายูง,Na Yung
+406,30,พิบูลย์รักษ์,Phibun Rak
+407,30,กู่แก้ว,Ku Kaeo
+408,30,ประจักษ์ศิลปาคม,Prachaksinlapakhom
+409,31,เมืองเลย,Mueang Loei
+410,31,นาด้วง,Na Duang
+411,31,เชียงคาน,Chiang Khan
+412,31,ปากชม,Pak Chom
+413,31,ด่านซ้าย,Dan Sai
+414,31,นาแห้ว,Na Haeo
+415,31,ภูเรือ,Phu Ruea
+416,31,ท่าลี่,Tha Li
+417,31,วังสะพุง,Wang Saphung
+418,31,ภูกระดึง,Phu Kradueng
+419,31,ภูหลวง,Phu Luang
+420,31,ผาขาว,Pha  Khao
+421,31,เอราวัณ,Erawan
+422,31,หนองหิน,Nong Hin
+423,32,เมืองหนองคาย,Mueang Nong Khai
+424,32,ท่าบ่อ,Tha Bo
+425,32,โพนพิสัย,Phon Phisai
+426,32,ศรีเชียงใหม่,Si Chiang Mai
+427,32,สังคม,Sangkhom
+428,32,สระใคร,Sakhrai
+429,32,เฝ้าไร่,Fao Rai
+430,32,รัตนวาปี,Rattanawapi
+431,32,โพธิ์ตาก,Pho Tak
+432,33,เมืองมหาสารคาม,Mueang Maha Sarakham
+433,33,แกดำ,Kae Dam
+434,33,โกสุมพิสัย,Kosum Phisai
+435,33,กันทรวิชัย,Kantharawichai
+436,33,เชียงยืน,Chiang Yuen
+437,33,บรบือ,Borabue
+438,33,นาเชือก,Na Chueak
+439,33,พยัคฆภูมิพิสัย,Phayakkhaphum Phisai
+440,33,วาปีปทุม,Wapi Pathum
+441,33,นาดูน,Na Dun
+442,33,ยางสีสุราช,Yang Sisurat
+443,33,กุดรัง,Kut Rang
+444,33,ชื่นชม,Chuen Chom
+445,34,เมืองร้อยเอ็ด,Mueang Roi Et
+446,34,เกษตรวิสัย,Kaset Wisai
+447,34,ปทุมรัตต์,Pathum Rat
+448,34,จตุรพักตรพิมาน,Chaturaphak Phiman
+449,34,ธวัชบุรี,Thawat Buri
+450,34,พนมไพร,Phanom Phrai
+451,34,โพนทอง,Phon Thong
+452,34,โพธิ์ชัย,Pho Chai
+453,34,หนองพอก,Nong Phok
+454,34,เสลภูมิ,Selaphum
+455,34,สุวรรณภูมิ,Suwannaphum
+456,34,เมืองสรวง,Mueang Suang
+457,34,โพนทราย,Phon Sai
+458,34,อาจสามารถ,At Samat
+459,34,เมยวดี,Moei Wadi
+460,34,ศรีสมเด็จ,Si Somdet
+461,34,จังหาร,Changhan
+462,34,เชียงขวัญ,Chiang Khwan
+463,34,หนองฮี,Nong Hi
+464,34,ทุ่งเขาหลวง,Thung Khao Luang
+465,35,เมืองกาฬสินธุ์,Mueang Kalasin
+466,35,นามน,Na Mon
+467,35,กมลาไสย,Kamalasai
+468,35,ร่องคำ,Rong Kham
+469,35,กุฉินารายณ์,Kuchinarai
+470,35,เขาวง,Khao Wong
+471,35,ยางตลาด,Yang Talat
+472,35,ห้วยเม็ก,Huai Mek
+473,35,สหัสขันธ์,Sahatsakhan
+474,35,คำม่วง,Kham Muang
+475,35,ท่าคันโท,Tha Khantho
+476,35,หนองกุงศรี,Nong Kung Si
+477,35,สมเด็จ,Somdet
+478,35,ห้วยผึ้ง,Huai Phueng
+479,35,สามชัย,Sam Chai
+480,35,นาคู,Na Khu
+481,35,ดอนจาน,Don Chan
+482,35,ฆ้องชัย,Khong Chai
+483,36,เมืองสกลนคร,Mueang Sakon Nakhon
+484,36,กุสุมาลย์,Kusuman
+485,36,กุดบาก,Kut Bak
+486,36,พรรณานิคม,Phanna Nikhom
+487,36,พังโคน,Phanh khon
+488,36,วาริชภูมิ,Waritchaphum
+489,36,นิคมน้ำอูน,Nikhom Nam un
+490,36,วานรนิวาส,Wanon Niwat
+491,36,คำตากล้า,Kham Ta Kla
+492,36,บ้านม่วง,Ban Muang
+493,36,อากาศอำนวย,Akat Amnuai
+494,36,สว่างแดนดิน,Sawang Daen Din
+495,36,ส่องดาว,Song Dao
+496,36,เต่างอย,Tao Ngoi
+497,36,โคกศรีสุพรรณ,Khok Si Suphan
+498,36,เจริญศิลป์,Charoen Sin
+499,36,โพนนาแก้ว,Phon Na Kaeo
+500,36,ภูพาน,Phu Phan
+501,37,เมืองนครพนม,Mueang Nakhon Phanom
+502,37,ปลาปาก,Pla Pak
+503,37,ท่าอุเทน,Tha Uthen
+504,37,บ้านแพง,Ban Phaeng
+505,37,ธาตุพนม,That Phanom
+506,37,เรณูนคร,Renu Nakhon
+507,37,นาแก,Na Kae
+508,37,ศรีสงคราม,Si Songkhram
+509,37,นาหว้า,Na Wa
+510,37,โพนสวรรค์,Phon Sawan
+511,37,นาทม,Na Thom
+512,37,วังยาง,Wang Yang
+513,38,เมืองมุกดาหาร,Mueang Mukdahan
+514,38,นิคมคำสร้อย,Nikhom Kham Soi
+515,38,ดอนตาล,Don Tan
+516,38,ดงหลวง,Don Tan
+517,38,คำชะอี,Khamcha-i
+518,38,ว่านใหญ่,Wan Yai
+519,38,หนองสูง,Nong Sung
+520,39,เมืองเชียงใหม่,Mueang Chiang Mai
+521,39,จอมทอง,Chom Thong
+522,39,แม่แจ่ม,Mae Chaem
+523,39,เชียงดาว,Chiang Dao
+524,39,ดอยสะเก็ด,Doi Saket
+525,39,แม่แตง,Mae Taeng
+526,39,แม่ริม,Mae Rim
+527,39,สะเมิง,Samoeng
+528,39,ฝาง,Fang
+529,39,แม่อาย,Mae Ai
+530,39,พร้าว,Phrao
+531,39,สันป่าตอง,San Pa Tong
+532,39,สันกำแพง,San Kamphaeng
+533,39,สันทราย,San Sai
+534,39,หางดง,Hang Dong
+535,39,ฮอด,Hot
+536,39,ดอยเต่า,Doi Tao
+537,39,อมก๋อย,Omkoi
+538,39,สารภี,Saraphi
+539,39,เวียงแหง,Wiang Haeng
+540,39,ไชยปราการ,Chai Prakan
+541,39,แม่วาง,Mae Wang
+542,39,แม่ออน,Mae On
+543,39,ดอยหล่อ,Doi Lo
+544,39,กัลยาณิวัฒนา,Kanlayaniwatthana
+545,40,เมืองลำพูน,Mueang Lamphun
+546,40,แม่ทา,Mae Tha
+547,40,บ้านโฮ่ง,Ban Hong
+548,40,ลี้,Li
+549,40,ทุ่งหัวช้าง,Thung Hua Chang
+550,40,ป่าซาง,Pa Sang
+551,40,บ้านธิ,Ban Thi
+552,40,เวียงหนองล่อง,Wiang Nong Long
+553,41,เมืองลำปาง,Mueang Lampang
+554,41,แม่เมาะ,Mae Mo
+555,41,เกาะคา,Ko kha
+556,41,เสริมงาม,Soem Ngam
+557,41,งาว,Ngao
+558,41,แจ้ห่ม,Chae Hom
+559,41,วังเหนือ,Wang Nuea
+560,41,เถิน,Thoen
+561,41,แม่พริก,Mae Phrik
+562,41,แม่ทะ,Mae Tha
+563,41,สบปราบ,Sop Prap
+564,41,ห้างฉัตร,Hang Chat
+565,41,เมืองปาน,Mueang Pan
+566,42,เมืองอุตรดิตถ์,Mueang Uttaradit
+567,42,ตรอน,Tron
+568,42,ท่าปลา,Tha Pla
+569,42,น้ำปาด,Nam Pat
+570,42,ฟากท่า,Fak Tha
+571,42,บ้านโคก,Ban Khok
+572,42,พิชัย,Phichai
+573,42,ลับแล,Laplae
+574,42,ทองแสนขัน,Thong Saen Khan
+575,43,เมืองแพร่,Mueang Phrae
+576,43,ร้องกวาง,Mueang Phrae
+577,43,ลอง,Long
+578,43,สูงเม่น,Sung Men
+579,43,เด่นชัย,Den Chai
+580,43,สอง,Song
+581,43,วังชิ้น,Wang Chin
+582,43,หนองม่วงไข่,Nong Muang Khai
+583,44,เมืองน่าน,Mueang Nan
+584,44,แม่จริม,Mae Charim
+585,44,บ้านหลวง,Ban Luang
+586,44,นาน้อย,Na Noi
+587,44,ปัว,Pua
+588,44,ท่าวังผา,Tha Wang Pha
+589,44,เวียงสา,Wiang Sa
+590,44,ทุ่งช้าง,Thung Chang
+591,44,เชียงกลาง,Chiang Klang
+592,44,นาหมื่น,Na Muen
+593,44,สันติสุข,Santi Suk
+594,44,บ่อเกลือ,Bo Kluea
+595,44,สองแคว,Song Khwae
+596,44,ภูเพียง,Phu Phiang
+597,44,เฉลิมพระเกียรติ,Chaloem Phra Kiet
+598,45,เมืองพะเยา,Mueang Phayao
+599,45,จุน,Chun
+600,45,เชียงคำ,Chiang Kham
+601,45,เชียงม่วน,Chiang Muan
+602,45,ดอกคำใต้,Dok Khamtai
+603,45,ปง,Pong
+604,45,แม่ใจ,Mae Chai 
+605,45,ภูซาง,Phu Sang
+606,45,ภูกามยาว,Phu Kamyao
+607,46,เมืองเชียงราย,Mueang Chiang Rai
+608,46,เวียงชัย,Wiang Chai
+609,46,เชียงของ,Chiang Khong
+610,46,เทิง,Thoeng
+611,46,พาน,Phan
+612,46,ป่าแดด,Pa Daet
+613,46,แม่จัน,Mae Chan
+614,46,เชียงแสน,Chiang Saen
+615,46,แม่สาย,Mae Sai
+616,46,แม่สรวย,Mae Suai
+617,46,เวียงป่าเป้า,Wiang Pa Pao
+618,46,พญาเม็งราย,Phaya Mengrai
+619,46,เวียงแก่น,Wiang Kaen
+620,46,ขุนตาล,Khun Tan
+621,46,แม่ฟ้าหลวง,Mae Fa Luang
+622,46,แม่ลาว,Mae Lao
+623,46,เวียงเชียงรุ้ง,Wiang Chiang Rung
+624,46,ดอยหลวง,Doi Luang
+625,47,เมืองแม่ฮ่องสอน,Mueang Mae Hong Son
+626,47,ขุนยวม,Khun Yuam
+627,47,ปาย,Pai
+628,47,แม่สะเรียง,Mae Sariang
+629,47,แม่ลาน้อย,Mae La Noi
+630,47,สบเมย,Sop Moei
+631,47,ปางมะผ้า,Pang Mapha
+632,48,เมืองนครสวรรค์,Mueang Nakhon Sawan
+633,48,โกรกพระ,Krok Phra
+634,48,ชุมแสง,Chum Saeng
+635,48,หนองบัว,Nong Bua
+636,48,บรรพตพิสัย,Banphot Phisai
+637,48,เก้าเลี้ยว,Kao Liao
+638,48,ตาคลี,Takhli
+639,48,ท่าตะโก,Tha Tako
+640,48,ไพศาลี,Phaisali
+641,48,พยุหะคีรี,Phayuha Hkiri
+642,48,ลาดยาว,Lat Yao
+643,48,ตากฟ้า,Tak Fa
+644,48,แม่วงก์,Mae Wong
+645,48,แม่เปิน,Mae Pern
+646,48,ชุมตาบง,Chum Ta Bong
+647,49,เมืองอุทัยธานี,Mueang Uthai Thani
+648,49,ทัพทัน,Thap Than
+649,49,สว่างอารมณ์,Sawang Arom
+650,49,หนองฉาง,Nong Chang
+651,49,หนองขาหย่าง,Nong Khayang
+652,49,บ้านไร่,Ban Rai
+653,49,ลานสัก,Lan Sak
+654,49,ห้วยคต,Huai Khot
+655,50,เมืองกำแพงเพชร,Mueang Kamphaeng Phet
+656,50,ไทรงาม,Sai Ngam
+657,50,คลองลาน,Khlong Lan
+658,50,ขาณุวรลักษบุรี,Khanu Woralaksaburi
+659,50,คลองขลุง,Khlong Khlung
+660,50,พรานกระต่าย,Phran Kratai
+661,50,ลานกระบือ,Lan Krabue
+662,50,ทรายทองวัฒนา,Sai Thong Watthana
+663,50,ปางศิลาทอง,Pang Sila Thong
+664,50,บึงสามัคคี,Bueng Samakkhi
+665,50,โกสัมพีนคร,Kosamphi Nakhon
+666,51,เมืองตาก,Mueang Tak
+667,51,บ้านตาก,Ban Tak
+668,51,สามเงา,Sam Ngao
+669,51,แม่ระมาด,Mae Ramat
+670,51,ท่าสองยาง,Tha Song Yang
+671,51,แม่สอด,Mae Sot
+672,51,พบพระ,Phop Phra
+673,51,อุ้มผาง,Um Phang
+674,51,วังเจ้า,Wang Chao
+675,52,เมืองสุโขทัย,Mueang Sukhothai
+676,52,บ้านด่านลานหอย,Ban Dan Lan Hoi
+677,52,คีรีมาศ,Khiri Mat
+678,52,กงไกรลาศ,Kong Krailat
+679,52,ศรีสัชนาลัย,Si Satchanalai
+680,52,ศรีสำโรง,Si Samrong
+681,52,สวรรคโลก,Sawankhalok
+682,52,ศรีนคร,Si Nakhon
+683,52,ทุ่งเสลี่ยม,Thung Saliam
+684,53,เมืองพิษณุโลก,Mueang Phitsanulok
+685,53,นครไทย,Nakhon Thai
+686,53,ชาติตระการ,Chat Trakan
+687,53,บางระกำ,Bang Rakam
+688,53,บางกระทุ่ม,Bang Krathum
+689,53,พรหมพิราม,Phrom Phiram
+690,53,วัดโบสถ์,Wat Bot
+691,53,วังทอง,Wang Thong
+692,53,เนินมะปราง,Noen Maprang
+693,54,เมืองพิจิตร,Mueang Phichit
+694,54,วังทรายพูน,Wang Sai Phun
+695,54,โพธิ์ประทับช้าง,Pho Prathap Chang
+696,54,ตะพานหิน,Taphan Hin
+697,54,บางมูลนาก,Bang Mun Nak
+698,54,โพทะเล,Pho Thale
+699,54,สามง่าม,Sam Ngam
+700,54,ทับคล้อ,Tap Khlo
+701,54,สากเหล็ก,Sak Lek
+702,54,บึงนาราง,Bueng Na Rang
+703,54,ดงเจริญ,Dong Charoen
+704,54,วชิรบารมี,Wachirabarami
+705,55,เมืองเพชรบูรณ์,Mueang Phetchabun
+706,55,ชนแดน,Chon Daen
+707,55,หล่มสัก,Lom Sak
+708,55,หล่มเก่า,Lom Kao
+709,55,วิเชียรบุรี,Wichian Buri
+710,55,ศรีเทพ,Si Thep
+711,55,หนองไผ่,Nong Phai
+712,55,บึงสามพัน,Bueng Sam Phan
+713,55,น้ำหนาว,Nam Nao
+714,55,วังโป่ง,Wang Pong
+715,55,เขาค้อ,Khao kho
+716,56,เมืองราชบุรี,Mueang Ratchaburi
+717,56,จอมบึง,Chom Bueng
+718,56,สวนผึ้ง,Suan Phueng
+719,56,ดำเนินสะดวก,Damnoen Saduak
+720,56,บ้านโป่ง,Ban Pong
+721,56,บางแพ,Bang Phae
+722,56,โพธาราม,Photharam
+723,56,ปากท่อ,Pak Tho
+724,56,วัดเพลง,Wat Phleng
+725,56,บ้านคา,Ban Kha
+726,57,เมืองกาญจนบุรี,Mueang Kanchanaburi
+727,57,ไทรโยค,Sai Yok
+728,57,บ่อพลอย,Bo Phloi
+729,57,ศรีสวัสดิ์,Si Sawat
+730,57,ท่ามะกา,Tha Maka
+731,57,ท่าม่วง,Tha Muang
+732,57,ทองผาภูมิ,Thong Pha Phum
+733,57,สังขละบุรี,Sangkhla Buri
+734,57,พนมทวน,Phanom Thuan
+735,57,เลาขวัญ,Lao Khwan
+736,57,ด่านมะขามเตี้ย,Dan Makham Tia
+737,57,หนองปรือ,Nong Prue
+738,57,ห้วยกระเจา,Huai Krachao
+739,58,เมืองสุพรรณบุรี,Mueang Saphan Buri
+740,58,เดิมบางนางบวช,Doem Bang Nang Buat
+741,58,ด่านช้าง,Dan Chang
+742,58,บางปลาม้า,Bang Pla Ma
+743,58,ศรีประจันต์,Si Prachan
+744,58,ดอนเจดีย์,Don Chedi
+745,58,สองพี่น้อง,Song Phi Nong
+746,58,สามชุก,Sam Chuk
+747,58,อู่ทอง,U Thong
+748,58,หนองหญ้าไซ,Nong Ya Sai
+749,59,เมืองนครปฐม,mueang Nakhon Pathom
+750,59,กำแพงแสน,Kamphaeng Saen
+751,59,นครชัยศรี,Nakhon Chai Si
+752,59,ดอนตูม,Don Tum
+753,59,บางเลน,Bang Len
+754,59,สามพราน,Sam Phran
+755,59,พุทธมณฑล,Phutthamonthon
+756,60,เมืองสมุทรสาคร,Mueang Samut Sakhon
+757,60,กระทุ่มแบน,Krathum Baen
+758,60,บ้านแพ้ว,Ban Phaeo
+759,61,เมืองสมุทรสงคราม,Mueang Samut Songkhram
+760,61,บางคนที,Bang Khonthi
+761,61,อัมพวา,Amphawa
+762,62,เมืองเพชรบุรี,Mueang Phetchaburi
+763,62,เขาย้อย,Khao Yoi
+764,62,หนองหญ้าปล้อง,Nong Ya Plong
+765,62,ชะอำ,Cha-am
+766,62,ท่ายาง,Tha Yang
+767,62,บ้านลาด,Ban Lat
+768,62,บ้านแหลม,Ban Laem
+769,62,แก่งกระจาน,Kaeng Krachan
+770,63,เมืองประจวบคีรีขันธ์,Mueang Prachuap Khiri Khan
+771,63,กุยบุรี,Kui Buri
+772,63,ทับสะแก,Thap Sakae
+773,63,บางสะพาน,Bang Saphan
+774,63,บางสะพานน้อย,Bang Saphan Noi
+775,63,ปราณบุรี,Pran Buri
+776,63,หัวหิน,Hua Hin
+777,63,สามร้อยยอด,Sam Roi Yot
+778,64,เมืองนครศรีธรรมราช,Mueang Nakhon Si Thammarat
+779,64,พรหมคีรี,Phrom Khiri
+780,64,ลานสกา,Lan Saka
+781,64,ฉวาง,Chawang
+782,64,พิปูน,Phipun
+783,64,เชียรใหญ่,Chian Yai
+784,64,ชะอวด,Cha-uat
+785,64,ท่าศาลา,Tha Sala
+786,64,ทุ่งสง,Thung Song
+787,64,นาบอน,Na Bon
+788,64,ทุ่งใหญ่,Thung Yai
+789,64,ปากพนัง,Pak Phanang
+790,64,ร่อนพิบูลย์,Ron Phibun
+791,64,สิชล,Sichon
+792,64,ขนอม,Khanom
+793,64,หัวไทร,Hua Sai
+794,64,บางขัน,Bang Khan
+795,64,ถ้ำพรรณรา,Tham Phannara
+796,64,จุฬาภรณ์,Chulabhorn
+797,64,พระพรหม,Phra Phrom
+798,64,นบพิตำ,Nopphitam
+799,64,ช้างกลาง,Chang Klang
+800,64,เฉลิมพระเกียรติ,Chaloem Phra Kiet
+801,65,เมืองกระบี่,Mueang Krabi
+802,65,เขาพนม,Khao Phanom
+803,65,เกาะลันตา,Ko Lanta
+804,65,คลองท่อม,Khlong Thom
+805,65,อ่าวลึก,Ao Luek
+806,65,ปลายพระยา,Plai Phraya
+807,65,ลำทับ,Lam Thap
+808,65,เหนือคลอง,Nuea Khlong
+809,66,เมืองพังงา,Mueang Phang-nga
+810,66,เกาะยาว,Ko Yao
+811,66,กะปง,Kapong
+812,66,ตะกั่วทุ่ง,Takua Thung
+813,66,ตะกั่วป่า,Takua Pa
+814,66,คุระบุรี,Khura Buri
+815,66,ทับปุด,Thap Put
+816,66,ท้ายเหมือง,Thai Mueang
+817,67,เมืองภูเก็ต,Mueang Phuket
+818,67,กะทู้,Kathu
+819,67,ถลาง,Thalang
+820,68,เมืองสุราษฎร์ธานี,Mueang Surat Thani
+821,68,กาญจนดิษฐ์,Kanchanadit
+822,68,ดอนสัก,Don Sak
+823,68,เกาะสมุย,Ko Samui
+824,68,เกาะพะงัน,Ko Pha-ngan
+825,68,ไชยา,Chaiya
+826,68,ท่าชนะ,Tha Chana
+827,68,คีรีรัฐนิคม,Khiri Rat Nikhom
+828,68,บ้านตาขุน,Ban Ta Khun
+829,68,พนม,Phanom
+830,68,ท่าฉาง,Tha Chang
+831,68,บ้านนาสาร,Ban Na San
+832,68,บ้านนาเดิม,Ban Na Doem
+833,68,เคียนซา,Khian Sa
+834,68,เวียงสระ,Wiang Sa
+835,68,พระแสง,Phrasaeng
+836,68,พุนพิน,Phunphin
+837,68,ชัยบุรี,Chai Buri
+838,68,วิภาวดี,Chai Buri
+839,69,เมืองระนอง,Mueang Ranong
+840,69,ละอุ่น,La-un
+841,69,กะเปอร์,Papoe
+842,69,กระบุรี,Kra Buri
+843,69,สุขสำราญ,Suk Samran
+844,70,เมืองชุมพร,Mueang Chumphon
+845,70,ท่าแซะ,Tha Sae
+846,70,ปะทิว,Pathio
+847,70,หลังสวน,Lang Suan
+848,70,ละแม,Lamae
+849,70,พะโต๊ะ,Phato
+850,70,สวี,Sawi
+851,70,ทุ่งตะโก,Thung Tako
+852,71,เมืองสงขลา,Muaeng Songkhla
+853,71,สทิงพระ,Sathing Phra
+854,71,จะนะ,Chana
+855,71,นาทวี,Na Thawi
+856,71,เทพา,Thepha
+857,71,สะบ้าย้อย,Saba Yoi
+858,71,ระโนด,Ranot
+859,71,กระแสสินธุ์,Krasae Sin
+860,71,รัตภูมิ,Rattaphum
+861,71,สะเดา,Sadao
+862,71,หาดใหญ่,Hat Yai
+863,71,นาหม่อม,Na Mom
+864,71,ควนเนียง,Khuan Niang
+865,71,บางกล่ำ,Bang Klam
+866,71,สิงหนคร,Singhanakhon
+867,71,คลองหอยโข่ง,Khlong Hoi Khong
+868,72,เมืองสตูล,Mueang Satun
+869,72,ควนโดน,Khuan Don
+870,72,ควนกาหลง,Khuan Kalong
+871,72,ท่าแพ,Tha Phae
+872,72,ละงู,La-ngu
+873,72,ทุ่งหว้า,Thung  Wa
+874,72,มะนัง,Manang
+875,73,เมืองตรัง,Mueang Trang
+876,73,กันตัง,Kantang
+877,73,ย่านตาขาว,Yan Ta Khao
+878,73,ปะเหลียน,Palian
+879,73,สิเกา,Sikao
+880,73,ห้วยยอด,Huai Yot
+881,73,วังวิเศษ,Wang Wiset
+882,73,นาโยง,Na Yong
+883,73,รัษฎา,Ratsada
+884,73,หาดสำราญ,Hat Samran
+885,74,เมืองพัทลุง,Mueang Phatthalung
+886,74,กงหรา,Kong Ra
+887,74,เขาชัยสน,Khao Chaison
+888,74,ตะโหมด,Tamot
+889,74,ควนขนุน,Khuan Khanun
+890,74,ปากพะยูน,Pak Phayun
+891,74,ศรีบรรพต,Si Banphot
+892,74,ป่าบอน,Pa Bon
+893,74,บางแก้ว,Bang Kaeo
+894,74,ป่าพยอม,Pa Phayom
+895,74,ศรีนครินทร์,Srinagarindra
+896,75,เมืองปัตตานี,Mueang Pattani
+897,75,โคกโพธิ์,Khok Pho
+898,75,หนองจิก,Nong Chik
+899,75,ปะนาเระ,Panare
+900,75,มายอ,Mayo
+901,75,ทุ่งยางแดง,Thung Yang Daeng
+902,75,สายบุรี,Sai Buri
+903,75,ไม้แก่น,Mai Kaen
+904,75,ยะหริ่ง,Yaring
+905,75,ยะรัง,Yarang
+906,75,กะพ้อ,Kapho
+907,75,แม่ลาน,Mae Lan
+908,76,เมืองยะลา,Mueang Yala
+909,76,เบตง,Betong
+910,76,บันนังสตา,Bannang Sata
+911,76,ธารโต,Than To
+912,76,ยะหา,Yaha
+913,76,รามัน,Raman
+914,76,กาบัง,Kabang
+915,76,กรงปีนัง,Krong Pinang
+916,77,เมืองนราธิวาส,Mueang Narathiwat
+917,77,ตากใบ,Tak Bai
+918,77,บาเจาะ,Tak Bai
+919,77,ยี่งอ,Yi-ngo
+920,77,ระแงะ,Ra-ngae
+921,77,รือเสาะ,Rueso
+922,77,ศรีสาคร,Si Sakhon
+923,77,แว้ง,Waeng
+924,77,สุคิริน,Sukhirin
+925,77,สุไหงโก-ลก,Su-ngai Kolok
+926,77,สุไหงปาดี,Su-ngai Padi
+927,77,จะแนะ,Chanae
+928,77,เจาะไอร้อง,Cho-airong

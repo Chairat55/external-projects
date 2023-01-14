@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="int" value="int" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="numeric" value="numeric" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="double" value="double" dbms="mysql,postgresql, mariadb, h2"/>
+    <property name="boolean" value="tinyint(1)" dbms="mysql, mariadb, h2"/>
+    <property name="boolean" value="boolean" dbms="postgresql, mariadb, h2"/>
+    <property name="varchar.small" value="varchar(120)" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="varchar.medium" value="varchar(255)" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="varchar.large" value="varchar(1000)" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="varchar.very_large" value="varchar(4000)" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="text" value="text" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="timestamp" value="timestamp" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="date" value="date" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="decimal" value="decimal(10,2)" dbms="mysql, postgresql, mariadb, h2"/>
+    <property name="date.now" value="now()" dbms="mysql, postgresql, mariadb, h2"/>
+
+    <changeSet id="1" author="chairat">
+        <comment>
+            Create Table User, Role, UserRole, Authority, RoleAuthority,insert user admin
+        </comment>
+        <createTable tableName="users">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" type="${varchar.medium}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="email" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_enabled" type="${boolean}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_non_locked" type="${boolean}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="role">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="user_role">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="${int}">
+                <constraints nullable="false"
+                             referencedTableName="users"
+                             referencedColumnNames="id"
+                             foreignKeyName="fk_user_role_user_id"/>
+            </column>
+            <column name="role_id" type="${int}">
+                <constraints nullable="false"
+                             referencedTableName="role"
+                             referencedColumnNames="id"
+                             foreignKeyName="fk_user_role_role_id"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="authority">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="role_authority">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="role_id" type="${int}">
+                <constraints nullable="false"
+                             referencedTableName="role"
+                             referencedColumnNames="id"
+                             foreignKeyName="fk_role_authority_role_id"/>
+            </column>
+            <column name="authority_id" type="${int}">
+                <constraints nullable="false"
+                             referencedTableName="authority"
+                             referencedColumnNames="id"
+                             foreignKeyName="fk_role_authority_authority_id"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addUniqueConstraint columnNames="username,email"
+                             constraintName="users_unique_username"
+                             tableName="users"
+        />
+
+        <insert tableName="role">
+            <column name="name" value="System Admin"/>
+            <column name="created_date" value="${date.now}"/>
+            <column name="created_by" value="SuperAdmin"/>
+            <column name="updated_date" value="${date.now}"/>
+            <column name="updated_by" value="SuperAdmin"/>
+        </insert>
+        <insert tableName="users">
+            <column name="username" value="super_admin"/>
+            <column name="email" value="superadmin@email.com"/>
+            <column name="password" value="{bcrypt}$2a$10$y9tA3UcjC1bKrDOTvUGRT.n5dEmvtC.ZRFDnwn79/.sicR1IKsK9a"/>
+            <column name="is_enabled" value="1"/>
+            <column name="is_non_locked" value="1"/>
+            <column name="created_date" value="${date.now}"/>
+            <column name="created_by" value="SuperAdmin"/>
+            <column name="updated_date" value="${date.now}"/>
+            <column name="updated_by" value="SuperAdmin"/>
+        </insert>
+        <insert tableName="user_role">
+            <column name="user_id" value="1"/>
+            <column name="role_id" value="1"/>
+            <column name="created_date" value="${date.now}"/>
+            <column name="created_by" value="SuperAdmin"/>
+            <column name="updated_date" value="${date.now}"/>
+            <column name="updated_by" value="SuperAdmin"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2" author="chairat">
+        <comment>Initial OAuth2 Server</comment>
+        <createTable tableName="oauth_client_details">
+            <column name="client_id" type="varchar(256)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="resource_ids" type="varchar(256)"/>
+            <column name="client_secret" type="varchar(256)"/>
+            <column name="scope" type="varchar(256)"/>
+            <column name="authorized_grant_types" type="varchar(256)"/>
+            <column name="web_server_redirect_uri" type="varchar(256)"/>
+            <column name="authorities" type="varchar(256)"/>
+            <column name="access_token_validity" type="int"/>
+            <column name="refresh_token_validity" type="int"/>
+            <column name="additional_information" type="varchar(4096)"/>
+            <column name="autoapprove" type="varchar(256)"/>
+        </createTable>
+
+        <createTable tableName="oauth_client_token">
+            <column name="token_id" type="varchar(256)"/>
+            <column name="token" type="LONGVARBINARY"/>
+            <column name="authentication_id" type="varchar(256)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_name" type="varchar(256)"/>
+            <column name="client_id" type="varchar(256)"/>
+        </createTable>
+
+        <createTable tableName="oauth_access_token">
+            <column name="token_id" type="varchar(256)"/>
+            <column name="token" type="LONGVARBINARY"/>
+            <column name="authentication_id" type="varchar(256)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_name" type="varchar(256)"/>
+            <column name="client_id" type="varchar(256)"/>
+            <column name="authentication" type="LONGVARBINARY"/>
+            <column name="refresh_token" type="varchar(256)"/>
+        </createTable>
+
+        <createTable tableName="oauth_refresh_token">
+            <column name="token_id" type="varchar(256)"/>
+            <column name="token" type="LONGVARBINARY"/>
+            <column name="authentication" type="LONGVARBINARY"/>
+        </createTable>
+
+        <createTable tableName="oauth_code">
+            <column name="oauth_code" type="varchar(256)"/>
+            <column name="authentication" type="LONGVARBINARY"/>
+        </createTable>
+
+        <createTable tableName="oauth_approvals">
+            <column name="userId" type="varchar(256)"/>
+            <column name="clientId" type="varchar(256)"/>
+            <column name="scope" type="varchar(256)"/>
+            <column name="status" type="varchar(10)"/>
+            <column name="expiresAt" type="timestamp"/>
+            <column name="lastModifiedAt" type="timestamp"/>
+        </createTable>
+
+        <insert tableName="oauth_client_details">
+            <column name="client_id" value="clientIdPassword"/>
+            <column name="client_secret" value="{bcrypt}$2a$10$.1oDefMAs6WrvuNuobKbuuTXLgwkiDtBO7o1GhgUlwoUmmVzF44.."/>
+            <column name="scope" value="user"/>
+            <column name="authorized_grant_types" value="password,authorization_code,refresh_token"/>
+            <column name="access_token_validity" value="3600"/>
+            <column name="refresh_token_validity" value="3600"/>
+            <column name="autoapprove" value="true"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="3" author="chairat">
+        <comment>
+            Create Table Customers
+        </comment>
+        <createTable tableName="customers">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="full_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birth_date" type="${date}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="company_name" type="${varchar.medium}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="business_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="business_date" type="${date}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="business_type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="province" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="district" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="subdistrict" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zipcode" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address_detail" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_tel" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_email" type="${varchar.medium}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="contact_detail" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="chairat">
+        <comment>
+            Add field user_id to Table Customers
+        </comment>
+
+        <addColumn tableName="customers">
+            <column name="user_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+
+        <addForeignKeyConstraint constraintName="fk_customers_and_users"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"
+                                 baseTableName="customers"
+                                 baseColumnNames="user_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="5" author="chairat">
+        <comment>
+            Create Table CRM
+        </comment>
+        <createTable tableName="crms">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="full_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birth_date" type="${date}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="business_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="business_date" type="${date}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hashtags" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="province" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="district" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="subdistrict" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zipcode" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_tel" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_email" type="${varchar.medium}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="contact_detail" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="expect_result" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expect_result_detail" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="expect_result_date" type="${date}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expect_result_time" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="actual_result" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="actual_result_detail" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="user_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_crms_and_users"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"
+                                 baseTableName="crms"
+                                 baseColumnNames="user_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="6" author="chairat">
+        <comment>
+            Create Table Customer Images
+        </comment>
+        <createTable tableName="customer_images">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="customer_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_path" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_customer_images_and_customers"
+                                 referencedTableName="customers"
+                                 referencedColumnNames="id"
+                                 baseTableName="customer_images"
+                                 baseColumnNames="customer_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="7" author="chairat">
+        <comment>
+            Create Table Provinces, Districts, Subdistricts
+        </comment>
+        <createTable tableName="add_provinces">
+            <column name="id" type="${int}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name_th" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name_en" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="add_districts">
+            <column name="id" type="${int}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="province_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name_th" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name_en" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="add_subdistricts">
+            <column name="id" type="${int}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="district_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name_th" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name_en" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zipcode" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="add_districts" baseColumnNames="province_id"
+                                 constraintName="fk_provinces_districts"
+                                 referencedTableName="add_provinces" referencedColumnNames="id"
+                                 onDelete="CASCADE"/>
+
+        <addForeignKeyConstraint baseTableName="add_subdistricts" baseColumnNames="district_id"
+                                 constraintName="fk_districts_subdistricts"
+                                 referencedTableName="add_districts" referencedColumnNames="id"
+                                 onDelete="CASCADE"/>
+    </changeSet>
+
+    <changeSet id="8" author="chairat">
+        <loadData tableName="add_provinces"
+                  file="files/thailand-provinces.csv"/>
+
+        <loadData tableName="add_districts"
+                  file="files/thailand-districts.csv"/>
+
+        <loadData tableName="add_subdistricts"
+                  file="files/thailand-subdistricts.csv"/>
+    </changeSet>
+
+    <changeSet id="9" author="chairat">
+        <comment>
+            Add field to Table Users
+        </comment>
+
+        <addColumn tableName="users">
+            <column name="full_name" type="${varchar.medium}" defaultValue="-">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tel" type="${varchar.small}" defaultValue="-">
+                <constraints nullable="false"/>
+            </column>
+            <column name="raw_password" type="${varchar.small}" defaultValue="-">
+                <constraints nullable="false"/>
+            </column>
+            <column name="line_id" type="${varchar.medium}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="other_contact" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+
+        <createTable tableName="user_images">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_path" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_user_images_and_users"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"
+                                 baseTableName="user_images"
+                                 baseColumnNames="user_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="10" author="chairat">
+        <comment>
+            Create Table Product, Product Image
+        </comment>
+
+        <createTable tableName="products">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="stock" type="${numeric}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="${double}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="product_images">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="product_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_path" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_product_images_and_products"
+                                 referencedTableName="products"
+                                 referencedColumnNames="id"
+                                 baseTableName="product_images"
+                                 baseColumnNames="product_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="11" author="chairat">
+        <comment>
+            Create Table Orders
+        </comment>
+        <createTable tableName="orders">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="customer_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="priority" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_tel" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_email" type="${varchar.medium}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="delivery_address" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_province" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_district" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_subdistrict" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_zipcode" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="total" type="${decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="discount" type="${decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="net" type="${decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_term" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_credit" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="remark" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+
+            <column name="status" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_orders_and_customers"
+                                 referencedTableName="customers"
+                                 referencedColumnNames="id"
+                                 baseTableName="orders"
+                                 baseColumnNames="customer_id"
+                                 onDelete="CASCADE"
+        />
+
+        <addForeignKeyConstraint constraintName="fk_orders_and_users"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"
+                                 baseTableName="orders"
+                                 baseColumnNames="user_id"
+                                 onDelete="CASCADE"
+        />
+
+
+        <createTable tableName="order_details">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="order_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="${decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="discount" type="${decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="quantity" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="total" type="${decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_order_details_and_orders"
+                                 referencedTableName="orders"
+                                 referencedColumnNames="id"
+                                 baseTableName="order_details"
+                                 baseColumnNames="order_id"
+                                 onDelete="CASCADE"
+        />
+
+
+        <createTable tableName="order_images">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="order_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_path" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_name" type="${varchar.medium}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_order_images_and_orders"
+                                 referencedTableName="orders"
+                                 referencedColumnNames="id"
+                                 baseTableName="order_images"
+                                 baseColumnNames="order_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="12" author="chairat">
+        <addColumn tableName="orders">
+            <column name="reject_remark" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="reject_due_date" type="${date}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="delivery_type" type="${varchar.small}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="delivery_date" type="${date}">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="13" author="chairat">
+        <comment>
+            Create Table Customer Tags
+        </comment>
+        <createTable tableName="tags">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="customer_tags">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="customer_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tag_id" type="${int}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_customer_tags_and_customers"
+                                 referencedTableName="customers"
+                                 referencedColumnNames="id"
+                                 baseTableName="customer_tags"
+                                 baseColumnNames="customer_id"
+                                 onDelete="CASCADE"
+        />
+
+        <addForeignKeyConstraint constraintName="fk_customer_tags_and_tags"
+                                 referencedTableName="tags"
+                                 referencedColumnNames="id"
+                                 baseTableName="customer_tags"
+                                 baseColumnNames="tag_id"
+                                 onDelete="CASCADE"
+        />
+    </changeSet>
+
+    <changeSet id="14" author="chairat">
+        <comment>
+            Create Table Files
+        </comment>
+        <createTable tableName="files">
+            <column name="id" type="${int}" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="${varchar.large}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file_path" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="file_name" type="${varchar.large}">
+                <constraints nullable="true"/>
+            </column>
+            <column name="created_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_date" type="${timestamp}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="${varchar.small}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
